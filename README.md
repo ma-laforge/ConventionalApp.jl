@@ -2,9 +2,9 @@
 [SampleConventionalApp]: <https://github.com/ma-laforge/SampleConventionalApp.jl>
 
 
-# JuliaApplications.jl
+# ConventionalApp.jl
 
-[![Build Status](https://travis-ci.org/ma-laforge/JuliaApplications.jl.svg?branch=main)](https://travis-ci.org/ma-laforge/JuliaApplications.jl)
+[![Build Status](https://travis-ci.org/ma-laforge/ConventionalApp.jl.svg?branch=main)](https://travis-ci.org/ma-laforge/ConventionalApp.jl)
 
 Provides tools to help deploy/execute conventional applications in Julia.
 
@@ -14,7 +14,7 @@ Julia "Project Environments" define the set of packages to use for experimentati
 
 By design, project environments are meant for somewhat open, "interactive" explorations (i.e. assemble custom analyses, as needed).
 
-In comparison, conventional applications tend to run specific code when launched. JuliaApplications.jl therefore provides tools to help configure the Julia environment, and launch said code.
+In comparison, conventional applications tend to run specific code when launched. ConventionalApp.jl therefore provides tools to help configure the Julia environment, and launch said code.
 
 ## Table of contents
 
@@ -24,7 +24,7 @@ In comparison, conventional applications tend to run specific code when launched
     1. [Installing an application](doc/usage.md#Installing_Application)
        1. [Creating a `bash` launch script](doc/usage.md#Installing_bashscript)
        1. [Creating a Windows shortcut](doc/usage.md#Installing_winshortcut)
-    1. [Using `JuliaApplications` in your application](doc/usage.md#Using_JuliaApplications)
+    1. [Using `ConventionalApp` in your application](doc/usage.md#Using_ConventionalApp)
        1. [Add `run_app()` function](doc/usage.md#add_run_app)
        1. [Add `run.jl` file](doc/usage.md#add_run_jl)
        1. [Add `startup.jl` file](doc/usage.md#add_startup_jl)
@@ -35,12 +35,12 @@ In comparison, conventional applications tend to run specific code when launched
 <a name="Installation"></a>
 ## Installation
 
-`JuliaApplications.jl` is NOT YET registered with Julia's **General** registry.
+`ConventionalApp.jl` is NOT YET registered with Julia's **General** registry.
 It can be installed using Julia's built-in package manager:
 
 ```julia-repl
 julia> ]
-pkg> add https://github.com/ma-laforge/JuliaApplications.jl
+pkg> add https://github.com/ma-laforge/ConventionalApp.jl
 ```
 
 <a name="SampleApplication"></a>
@@ -60,10 +60,10 @@ See [SampleConventionalApp].
 
 ### Compatibility
 
-Extensive compatibility testing of JuliaApplications.jl has not been performed.  The module has been tested using the following environment(s):
+Extensive compatibility testing of ConventionalApp.jl has not been performed.  The module has been tested using the following environment(s):
 
  - Linux / Julia-1.3.1
 
 ## Disclaimer
 
-The JuliaApplications.jl module is not yet mature.  Expect significant changes.
+The ConventionalApp.jl module is not yet mature.  Expect significant changes.

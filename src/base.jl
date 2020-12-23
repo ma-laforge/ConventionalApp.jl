@@ -1,4 +1,4 @@
-#JuliaApplications: base type, constant & function definitions.
+#ConventionalApp: base type, constant & function definitions.
 #-------------------------------------------------------------------------------
 
 

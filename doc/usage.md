@@ -1,9 +1,9 @@
-# JuliaApplications: Usage
+# ConventionalApp: Usage
 
 <a name="Installing_Application"></a>
 ## Installing an application
 
-Use the Julia `Pkg` system to download & install your `JuliaApplication`-enabled application.
+Use the Julia `Pkg` system to download & install your `ConventionalApp`-enabled application.
 For example, to try out the sample application:
 
 ```julia-repl
@@ -19,8 +19,8 @@ A launcher `bash` script can be generated with the following:
 
 ```julia-repl
 using SampleConventionalApp
-using JuliaApplications
-JuliaApplications.gen_bashfile(SampleConventionalApp)
+using ConventionalApp
+ConventionalApp.gen_bashfile(SampleConventionalApp)
 ```
 (Substituting `SampleConventionalApp` with the name of your own application/project)
 
@@ -32,8 +32,8 @@ A windows shortcut can be generated with the following:
 
 ```julia-repl
 using SampleConventionalApp
-using JuliaApplications
-JuliaApplications.gen_winshortcut(SampleConventionalApp)
+using ConventionalApp
+ConventionalApp.gen_winshortcut(SampleConventionalApp)
 ```
 
 (Substituting `SampleConventionalApp` with the name of your own application/project)
@@ -41,26 +41,26 @@ JuliaApplications.gen_winshortcut(SampleConventionalApp)
 IMPORTANT: At the moment, this will only generate instructions on how to create your shortcut
 (will explain what goes in the "Target", and "Start in" fields).
 
-<a name="Using_JuliaApplications"></a>
-## Using `JuliaApplications` in your application
+<a name="Using_ConventionalApp"></a>
+## Using `ConventionalApp` in your application
 
-The first step to using `JuliaApplications` facilities in an application is to `add`
-`JuliaApplications` to its `Project.toml` file:
+The first step to using `ConventionalApp` facilities in an application is to `add`
+`ConventionalApp` to its `Project.toml` file:
 
 ```julia-repl
 julia> ]
 pkg> activate MyApplication
 
-pkg> add JuliaApplications
+pkg> add ConventionalApp
 ```
 
 <a name="add_run_app"></a>
 ### Add `run_app()` function
 
-`JuliaApplications` expects that the entry point of your application be a `run_app()`
+`ConventionalApp` expects that the entry point of your application be a `run_app()`
 function in your application's main module (same name as your application).
 In other words, the role of `run_app()` is similar to that of `main()` in c/c++.
-The `JuliaApplications` launch script will therefore automatically execute:
+The `ConventionalApp` launch script will therefore automatically execute:
 
 ```julia-repl
 MyApplication.run_app()
@@ -75,8 +75,8 @@ The following will create a Julia launch script (`run.jl`) in your application's
 
 ```julia-repl
 using MyApplication
-using JuliaApplications
-JuliaApplications.gen_runfile(MyApplication)
+using ConventionalApp
+ConventionalApp.gen_runfile(MyApplication)
 ```
 
 IMPORTANT: You must commit this `run.jl` file to make it available to others.

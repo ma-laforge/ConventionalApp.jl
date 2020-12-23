@@ -1,4 +1,4 @@
-#JuliaApplications: Launcher file generation
+#ConventionalApp: Launcher file generation
 #-------------------------------------------------------------------------------
 
 
@@ -22,7 +22,7 @@ function gen_runfile(::Type{String}, proj::Project)
 	app_path = proj.root
 	app_name = basename(app_path)
 	runfile="""
-using JuliaApplications
+using ConventionalApp
 
 proj = Project(@__DIR__)
 setup_env(proj)

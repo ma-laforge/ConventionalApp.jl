@@ -1,4 +1,4 @@
-#JuliaApplications: Install interface (deprecated).
+#ConventionalApp: Install interface (deprecated).
 #-------------------------------------------------------------------------------
 
 

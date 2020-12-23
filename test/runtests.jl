@@ -1,4 +1,4 @@
-using Test, JuliaApplications
+using Test, ConventionalApp
 
 #printsep(label, sep="-") = println("\n", label, "\n", repeat(sep, 80))
 #printheader(label) = printsep(label, "=")
@@ -12,7 +12,7 @@ function show_testset_description()
 	@info "Testing: " * Test.get_testset().description
 end
 
-@testset "JuliaApplications tests" begin
+@testset "ConventionalApp tests" begin
 	testfiles = ["test1.jl", "test2.jl"]
 
 	for testfile in testfiles
