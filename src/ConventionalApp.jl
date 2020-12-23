@@ -1,6 +1,6 @@
-#JuliaApplications: Develop conventional applications in Julia
+#ConventionalApp: Develop conventional applications in Julia
 #-------------------------------------------------------------------------------
-module JuliaApplications
+module ConventionalApp
 
 using Pkg
 #using LibGit2
@@ -11,4 +11,4 @@ include("filegen.jl")
 
 export Project, setup_env, activeproject, @include_startup
 
-end #JuliaApplications
+end #ConventionalApp
