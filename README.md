@@ -4,7 +4,7 @@
 
 # ConventionalApp.jl
 
-[![Build Status](https://travis-ci.org/ma-laforge/ConventionalApp.jl.svg?branch=main)](https://travis-ci.org/ma-laforge/ConventionalApp.jl)
+[![Build Status](https://github.com/ma-laforge/ConventionalApp.jl/workflows/CI/badge.svg)](https://github.com/ma-laforge/ConventionalApp.jl/actions?query=workflow%3ACI)
 
 Provides tools to help deploy/execute conventional applications in Julia.
 
@@ -62,7 +62,7 @@ See [SampleConventionalApp].
 
 Extensive compatibility testing of ConventionalApp.jl has not been performed.  The module has been tested using the following environment(s):
 
- - Linux / Julia-1.3.1
+ - Windows 10 / Linux / Julia-1.5.3
 
 ## Disclaimer
 
