@@ -35,12 +35,13 @@ In comparison, conventional applications tend to run specific code when launched
 <a name="Installation"></a>
 ## Installation
 
-`ConventionalApp.jl` is NOT YET registered with Julia's **General** registry.
+`ConventionalApp.jl` is registered with Julia's **General** registry.
 It can be installed using Julia's built-in package manager:
+
 
 ```julia-repl
 julia> ]
-pkg> add https://github.com/ma-laforge/ConventionalApp.jl
+pkg> add ConventionalApp
 ```
 
 <a name="SampleApplication"></a>
